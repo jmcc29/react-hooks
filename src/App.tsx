@@ -3,7 +3,7 @@ import Counter from "./components/Counter"
 function App() {
   return (
     <>
-      <title>React + TypeScript + Vite</title>
+      <h1>Hola React</h1>
       <div>
         <Counter/>
       </div>
