@@ -17,8 +17,13 @@ export const User = () => {
       <h3 style={{ textAlign: "center" }}>User: useState</h3>
       <button onClick={login} className="btn btn-outline-primary">
         Login
+      </button>{" "}
+      <button
+        onClick={() => setUser(undefined)}
+        className="btn btn-outline-danger"
+      >
+        Log Out
       </button>
-
       {!user ? <pre>No hay usuario</pre> : <pre>{JSON.stringify(user)}</pre>}
     </div>
   );
